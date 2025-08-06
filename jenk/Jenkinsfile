@@ -16,5 +16,12 @@ pipeline{
                 sh 'echo "am deploying the image of K8"'
             }
         }
+        stage('Menory'){
+            stages{
+                sh '''
+                    lscpu
+                '''
+            }
+        }
     }
 }
