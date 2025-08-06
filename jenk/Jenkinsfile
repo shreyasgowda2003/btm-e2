@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Deploy'){
             step{
-                sh 'echo "am deploying the image of K8"'
+                sh 'echo "am deploying the image of Kubernetes"'
             }
         }
     }
