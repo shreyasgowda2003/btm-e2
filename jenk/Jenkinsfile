@@ -2,17 +2,17 @@ pipeline{
     agent any
     stages{
         stage('Build'){
-            step{
+            steps{
                 sh 'echo "am building image with Docker"'
             }
         }
         stage('Test'){
-            step{
+            steps{
                 sh 'echo "am testing the image of Docker"'
             }
         }
         stage('Deploy'){
-            step{
+            steps{
                 sh 'echo "am deploying the image of Kubernetes"'
             }
         }
