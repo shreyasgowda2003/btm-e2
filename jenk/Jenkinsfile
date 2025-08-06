@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('Build'){
+            step{
+                sh 'echo "am building image with Docker"'
+            }
+        }
+        stage('Test'){
+            step{
+                sh 'echo "am testing the image of Docker"'
+            }
+        }
+        stage('Deploy'){
+            step{
+                sh 'echo "am deploying the image of K8"'
+            }
+        }
+    }
+}
