@@ -13,7 +13,7 @@ pipeline{
         }
         stage('info'){
             steps{
-                sh 'top'
+                sh 'touch virat'
             }
         }
     }
